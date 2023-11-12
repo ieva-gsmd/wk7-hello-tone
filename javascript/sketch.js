@@ -7,13 +7,12 @@ cnv = createCanvas(windowWidth, windowHeight);
 cnv.mousePressed(playSynth);
 
 const lfilter = new Tone.Filter({
-  frequency: 1200,
+  frequency: 20000,
   type: 'lowpass',
   rolloff: -48
 }).toDestination();
 
 synth = new Tone.Synth({
-  type: "square",
   volume: -6
 }).connect(lfilter);
 
