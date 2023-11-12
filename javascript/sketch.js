@@ -7,7 +7,7 @@ cnv = createCanvas(windowWidth, windowHeight);
 cnv.mousePressed(playSynth);
 
 const lfilter = new Tone.Filter({
-  frequency: 20000,
+  frequency: 500,
   type: 'lowpass',
   rolloff: -48
 }).toDestination();
